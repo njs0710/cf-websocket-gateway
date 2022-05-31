@@ -85,4 +85,4 @@ Below is an example listener CFC that echos a message back to the client that se
     </cfcomponent>
     
     
- This implementation is based on [cf-websocket-gateway](https://github.com/nmische/cf-websocket-gateway) 
+ This implementation is based on [cf-websocket-gateway](https://github.com/nmische/cf-websocket-gateway).
