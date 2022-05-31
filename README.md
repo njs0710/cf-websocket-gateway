@@ -11,6 +11,7 @@ This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rf
 * Restart ColdFusion, if necessary.
 * Log in to the ColdFusion administrator and navigate to the Event Gateways > Gateway Types page.
 * Under Add / Edit ColdFusion Event Gateway Types enter the following:
+
     * Type Name: WebSocket
     * Description: Handles WebSocket Messaging
     * Java Class: org.riaforge.websocketgateway.WebSocketGateway
@@ -21,10 +22,12 @@ This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rf
 
 * Log in to the ColdFusion administrator and navigate to the Event Gateways > Gateway Instances page.
 * Under Add / Edit ColdFusion Event Gateway Instances enter the following:
+
     * Gateway ID: An name for your gateway instance.
     * Gateway Type: WebSocket - Handles WebSocket Messaging
     * CFC Path: Path to the CFC listner. For more about the listener CFC see Handling Incoming Messages.
     * Configuration File: The path to the (optional) configuration file. If not provided the WebSocket server will listen on port 1225. Below is a sample configuration file.
+
 
 ```
 # port - The port the WebSocket server should listen on.
