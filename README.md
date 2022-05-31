@@ -1,4 +1,4 @@
-#ColdFusion WebSocket Gateway#
+# ColdFusion WebSocket Gateway #
 
 
 This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging.
