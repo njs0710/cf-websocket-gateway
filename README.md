@@ -1,7 +1,7 @@
 #ColdFusion WebSocket Gateway#
 
 
-This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging. This implementation is based on the [Webbit](https://github.com/joewalnes/webbit) server.
+This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging.
 
 ## Installing the Gateway ##
 
