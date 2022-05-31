@@ -5,7 +5,7 @@ This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rf
 
 ## Installing the Gateway ##
 
-* Downlaod the `cf-websocket-gateway-webbit-X.X.zip` package from [Github](https://github.com/njs0710/cf-websocket-gateway/releases/download/v2.1/cf-websocket-gateway.zip).
+* Download the `cf-websocket-gateway-webbit-X.X.zip` package from [Github](https://github.com/njs0710/cf-websocket-gateway/releases/download/v2.1/cf-websocket-gateway.zip).
 * Extract the `cf-websocket-gateway-X.X.jar`, `netty-3.2.6.Final.jar`, and the `webbit-0.3.0.jar` to the ColdFusion classpath.
     * The best place to put the jar is in the `{cfusion.root}/gateway/lib` folder. For example `C:\ColdFusion9\gateway\lib` or `/Applications/JRun4/servers/cfusion/cfusion-ear/cfusion-war/WEB-INF/cfusion/gateway/lib/`
 * Restart ColdFusion, if necessary.
