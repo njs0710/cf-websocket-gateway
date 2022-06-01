@@ -8,6 +8,7 @@ import java.util.Hashtable;
 import java.util.Map;
 import java.util.Properties;
 
+import org.webbitserver.WebServers;
 import org.webbitserver.WebServer;
 import org.webbitserver.WebSocketConnection;
 import org.webbitserver.WebSocketHandler;
@@ -86,9 +87,9 @@ public class WebSocketGateway implements Gateway, WebSocketHandler {
         status = STARTING;
         try {
 
-            webServer = createWebServer(port)
+            webServer = WebServers.createWebServer(port)
                 .add("/", this)
-                .start();
+                .start().get();
 
         } catch (Exception e) {
 
@@ -127,7 +128,7 @@ public class WebSocketGateway implements Gateway, WebSocketHandler {
     public String outgoingMessage(CFEvent cfmsg) {
 
         // Get the table of data returned from the even handler
-        Map << ? , ? > data = cfmsg.getData();
+        Map < ? , ? > data = cfmsg.getData();
 
         Object value = data.get("MESSAGE");
 
@@ -314,7 +315,11 @@ public class WebSocketGateway implements Gateway, WebSocketHandler {
     }
 
     @Override
-    public void onPong(WebSocketConnection conn, String message) throws Throwable {
+    public void onPong(WebSocketConnection conn, byte[] message) throws Throwable {
+        // TODO Auto-generated method stub
+    }
+
+    public void onPing(WebSocketConnection conn, byte[] message) throws Throwable {
         // TODO Auto-generated method stub
     }
 

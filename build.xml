@@ -1,7 +1,8 @@
 <project name="cf-websocket-gateway" default="make" basedir=".">
+    <record name="build.log" loglevel="verbose" action="start" />
     <property name="java.home" value="env.JAVA_HOME"/>
     <property name="cf.home" value="/Applications/Jrun4/servers/cfusion/cfusion-ear/cfusion-war/WEB-INF/cfusion"/>
-    <property name="cfusionjar" value="${cf.home}/lib/cfusion.jar"/>
+    <property name="cfusionjar" value="C:\ColdFusion2018\cfusion\lib\cfusion.jar"/>
     <property file="version.properties"/>
 
     <target name="make" depends="clean,compile,jar" description="The default: build everything."/>

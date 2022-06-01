@@ -1,0 +1,18 @@
+Override ignored for property "java.home"
+ [property] Loading C:\Repositories\cf-websocket-gateway\version.properties
+Build sequence for target(s) `jar' is [jar]
+Complete build sequence is [jar, clean, compile, make, copy-files, remove-files, install, make-dist, ]
+
+jar:
+      [jar] Building jar: C:\Repositories\cf-websocket-gateway\bin\cf-websocket-gateway-2.1.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory org/
+      [jar] adding directory org/riaforge/
+      [jar] adding directory org/riaforge/websocketgateway/
+      [jar] adding entry org/riaforge/websocketgateway/WebSocketGateway.class
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: C:\Repositories\cf-websocket-gateway\build.xml:22: 
+jar:  duration 0 seconds
+
+BUILD SUCCESSFUL

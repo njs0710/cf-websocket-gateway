@@ -1,12 +1,12 @@
 # ColdFusion WebSocket Gateway #
 
 
-This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging, based on [cf-websocket-gateway](https://github.com/nmische/cf-websocket-gateway).
+This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging.
 
 ## Installing the Gateway ##
 
 * Download the `cf-websocket-gateway-webbit-X.X.zip` package from [Github](https://github.com/njs0710/cf-websocket-gateway/releases/download/v2.1/cf-websocket-gateway.zip).
-* Extract the `cf-websocket-gateway-X.X.jar`, `netty-3.2.6.Final.jar`, and the `webbit-0.3.0.jar` to the ColdFusion classpath.
+* Extract the `cf-websocket-gateway-X.X.jar`, `netty-3.2.7.Final.jar`, and the `webbit-0.4.6.jar` to the ColdFusion classpath.
     * The best place to put the jar is in the `{cfusion.root}/gateway/lib` folder. For example `C:\ColdFusion9\gateway\lib` or `/Applications/JRun4/servers/cfusion/cfusion-ear/cfusion-war/WEB-INF/cfusion/gateway/lib/`
 * Restart ColdFusion, if necessary.
 * Log in to the ColdFusion administrator and navigate to the Event Gateways > Gateway Types page.
@@ -87,4 +87,5 @@ Below is an example listener CFC that echos a message back to the client that se
       </cffunction>
     </cfcomponent>
     
-   
+    
+ This implementation is based on [cf-websocket-gateway](https://github.com/nmische/cf-websocket-gateway).
