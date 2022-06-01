@@ -1,7 +1,7 @@
 # ColdFusion WebSocket Gateway #
 
 
-This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging.
+This is a ColdFusion event gateway for [WebSocket](http://tools.ietf.org/html/rfc6455) messaging, based on [cf-websocket-gateway](https://github.com/nmische/cf-websocket-gateway).
 
 ## Installing the Gateway ##
 
@@ -87,5 +87,4 @@ Below is an example listener CFC that echos a message back to the client that se
       </cffunction>
     </cfcomponent>
     
-    
- This implementation is based on [cf-websocket-gateway](https://github.com/nmische/cf-websocket-gateway).
+   
