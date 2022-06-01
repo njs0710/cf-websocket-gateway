@@ -8,7 +8,7 @@ import java.util.Hashtable;
 import java.util.Map;
 import java.util.Properties;
 
-import org.webbitserver.WebServers;
+
 import org.webbitserver.WebServer;
 import org.webbitserver.WebSocketConnection;
 import org.webbitserver.WebSocketHandler;
@@ -87,7 +87,7 @@ public class WebSocketGateway implements Gateway, WebSocketHandler {
         status = STARTING;
         try {
 
-            webServer = WebServers.createWebServer(port)
+            webServer = createWebServer(port)
                 .add("/", this)
                 .start().get();
 
